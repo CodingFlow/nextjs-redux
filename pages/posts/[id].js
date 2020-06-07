@@ -4,10 +4,10 @@ import Head from 'next/head'
 
 export default function Post({ postData }) {
   return (
-    <Head>
-        <title>{postData.title}</title>
-    </Head>
     <Layout>
+        <Head>
+            <title>{postData.title}</title>
+        </Head>
     {postData.title}
     <br />
     {postData.id}
